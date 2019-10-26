@@ -1,7 +1,6 @@
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import AndroidSplash from './Screen/AndroidSplash';
-import Dashboard from './Screen/Dashboard';
 import { Platform } from 'react-native'
 import TabNavigation from './TabNavigation';
 

@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import { Text, View } from 'react-native'
+import IosHeaderFix from './../Components/IosHeaderFix'
 
 export default class Share extends Component {
     render() {
         return (
             <View>
-                <Text> textInComponent </Text>
+                <IosHeaderFix />
+                <Text> Share </Text>
             </View>
         )
     }
