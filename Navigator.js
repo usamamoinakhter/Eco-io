@@ -22,7 +22,7 @@ const AppNavigator = createStackNavigator({
   },
 },
   {
-    initialRouteName: 'Signin',
+    initialRouteName: 'Signup',
     headerMode: "none",
     defaultNavigationOptions: {
       gesturesEnabled: true,
