@@ -8,8 +8,6 @@ export default class SignupScreen extends Component {
         this.state = {
             height: Dimensions.get('screen').height
         }
-
-
     }
 
 
@@ -38,6 +36,9 @@ export default class SignupScreen extends Component {
                     </View>
                     <View style={{ width: '100%', borderBottomColor: 'rgba(0,0,0,0.5)', borderBottomWidth: 1, paddingTop: 35 }}>
                         <TextInput style={{ paddingTop: 23, fontSize: 17, paddingHorizontal: 8, color: '#3B8686' }} placeholder="Repeat Password" secureTextEntry={true} />
+                    </View>
+                    <View style={{ width: '100%', marginTop: 35, backgroundColor: 'rgba(0,0,0,0.05)' }}>
+                        <TextInput style={{ paddingTop: 23, fontSize: 17, paddingHorizontal: 8, color: '#3B8686' }} placeholder="Referral Code: 23123" secureTextEntry={true} />
                     </View>
 
                     <TouchableOpacity style={{ width: '100%', marginTop: 50, backgroundColor: '#79BD9A', justifyContent: 'center', alignItems: 'center', padding: 15 }}>
