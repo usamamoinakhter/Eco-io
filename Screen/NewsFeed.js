@@ -40,6 +40,12 @@ export default class NewsFeed extends Component {
 
 
                     </ImageBackground>
+
+                    <TouchableOpacity style={{ width: '100%', padding: 10 }} onPress={() => {
+                        this.props.navigation.navigate('Leaderboard')
+                    }}>
+                        <Text style={{ width: '100%', textAlign: 'center' }}>Open Leaderboard</Text>
+                    </TouchableOpacity>
                     <View style={styles.feed}>
                         <View style={{ justifyContent: 'space-between', width: '100%', flexDirection: 'row' }}>
                             <Text style={{ textTransform: 'uppercase', color: '#4DB854', fontWeight: 'bold', fontSize: 12 }}> NEARBY </Text>

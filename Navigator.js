@@ -5,6 +5,7 @@ import { Platform } from 'react-native'
 import TabNavigation from './TabNavigation';
 import SignupScreen from './Screen/SignupScreen';
 import SigninScreen from './Screen/SigninScreen';
+import LeaderBoard from './Screen/LeaderBoard';
 
 
 const AppNavigator = createStackNavigator({
@@ -19,6 +20,9 @@ const AppNavigator = createStackNavigator({
   },
   Signin: {
     screen: SigninScreen,
+  },
+  Leaderboard: {
+    screen: LeaderBoard,
   },
 },
   {
