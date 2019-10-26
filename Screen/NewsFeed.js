@@ -57,9 +57,7 @@ export default class NewsFeed extends Component {
                                     <Text style={{ color: '#707070', fontSize: 12 }}>Solved Verification</Text>
                                 </TouchableOpacity>
                             </ScrollView>
-                            {/* <TouchableOpacity activeOpacity={0.8}>
-                                <Text>Selection Menu</Text>
-                            </TouchableOpacity> */}
+
                         </View>
                         <FeedItem />
                         <FeedItem />
