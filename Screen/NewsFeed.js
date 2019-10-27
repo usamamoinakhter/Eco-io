@@ -3,8 +3,10 @@ import { Text, View, StyleSheet, Image, ScrollView, ImageBackground } from 'reac
 import IosHeaderFix from './../Components/IosHeaderFix'
 import { TouchableOpacity } from 'react-native-gesture-handler'
 import FeedItem from '../Components/FeedItem'
-
+import firebase from './../firebase.config'
 export default class NewsFeed extends Component {
+
+    componentDidMount() { }
     render() {
         return (
             <View style={{ width: '100%', flex: 1 }}>

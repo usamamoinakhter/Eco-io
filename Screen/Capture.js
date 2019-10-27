@@ -20,24 +20,10 @@ export default class Capture extends Component {
         };
 
 
-        ImagePicker.launchCamera(options, (response) => {
-            if (response.didCancel) {
-                console.log('User cancelled image picker');
-            } else if (response.error) {
-                console.log('ImagePicker Error: ', response.error);
-            } else if (response.customButton) {
-                console.log('User tapped custom button: ', response.customButton);
-            } else {
-                const source = { uri: response.uri };
-
-                // You can also display the image using data:
-                // const source = { uri: 'data:image/jpeg;base64,' + response.data };
-
-                this.setState({
-                    imageSource: source,
-                });
-            }
-        });
+        // // Open Image Library:
+        // ImagePicker.launchImageLibrary(options, (response) => {
+        //     // Same code as in above section!
+        // });
 
     }
 
@@ -45,7 +31,7 @@ export default class Capture extends Component {
         return (
             <View style={{ width: '100%', flex: 1 }}>
                 <IosHeaderFix />
-                <Text> Capture </Text>
+                {/* <Text> Capture </Text> */}
             </View>
         )
     }
